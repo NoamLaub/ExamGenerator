@@ -1,0 +1,54 @@
+הגשת מטלה 2 בתיכון מונחה עצמים
+
+הכפתורים הרלוונטים למטלה זו: 
+Transfer tests to treeSet
+Transfer tests from treeSet to a hashLinkedSet
+Transfer tests from a hashLinkedSet to MyArrayList
+הכפתור השלישי הוא הרלוונטי למטלה זו, אך הוא יהפוך לפעיל רק אחרי הפעלת שני הכפתורים שלפניו.
+
+**ההדפסה מתרחשת בקונסול ולא בחלון
+
+
+MyArrayList is in the package: "module"
+internal ConcreteIterator class is in the class: "MyArrayList"
+MyButton and MyLabel are in the package: "view"
+
+
+הפונקציות הרלוונטיות למטלה זו  במחלקה OperatingSystem
+הפונקציות הן:
+transferTestsFromHashLinkedSetToMyArrayList()
+activateIterator()
+
+the window is Case11 in package: "view"
+
+mvc שמרנו על מבנה 
+
+לכן הפונקציות שמקשרות בין החלק הלוגי לחלק של התצוגה נמצא:
+class controller in package: controller 
+
+ :controllerהחלק הרלוונטי למטלה זה ב 
+menu.addMyEventHandlerForCase11
+case11.addMyEventHandlerToMyButton
+(שורות 500-518)
+
+:remove תיאור המימוש של 
+ count אנו שומרים משתנה בשם MyArrayList במחלקה 
+המשתנה הזה מייצג את מספר האיברים במערך
+cur במחלקה הפנימית של האיטרטור שמרנו משתנה בשם 
+אתחלנו אותו במינוס 1 והוא מייצג את האינדקס של האיבר הנוכחי
+ableToRemove כמו כן, יש לנו משתנה בוליאני בשם
+falseמאותחל ב
+רק אחרי שהאיטרטור מצביע על איבר ,המשתנה הבולאיני הופך לאמיתי.
+fuction remove:
+ IllegalStateException() אם המשתנה הבוליאני שקרי אז הפונקציה זורקת חריגה
+בלולאת פור אנחנו מזיזים את כל האיברים שמימין לאינדקס הנוכחי אחד שמאלה
+count,cur :לאחר מכן, אנו מחסירים 1 מהמשתנים
+
+
+
+
+
+
+הגדרתי שיוויון של מבחנים על פי מספר השאלות במבחן ואורך הטקסט של השאלה הראשונה
+
+
