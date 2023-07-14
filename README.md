@@ -9,11 +9,13 @@ In the second year we were asked in the course "Data Bases" to intergrate an SQL
 I implemented this intergration by directing all contruction of questions and tests to the SQL data base, every action that was made through the objects classes in the original project were now made directly with the SQL data base, this include adding questions, creating tests, changing wording of questions or answers, verifying that prerequisites are met before adding new data to the data base and so on.
 
 ----Prerequisites----
+
 No duplicateed questions, this mean wording of questions can't be identical unless the questions are different types (Open/close questions)
 For close questions : must have at least 4 answers, no duplicated answers, and 2 more answers are always added to every close questions whice are "all answers are correct" and "None of the answers are correct".
 
 
 ----Important information for running the software----
+
 This software works with a local MySql Data base, so to run the software independently one must first create the data base using MySql workbench with the the code in the "MySqlCode" folder.
 Query class found in the folder "module" is the class with all related functions to the DB.  the connection with DB is created in the function "createConnector".(you'll need to change the information there to your mysql local information)
 
