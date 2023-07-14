@@ -1,0 +1,72 @@
+הגשת מטלה 3 בתיכון מונחה עצמים
+
+26. COMMAND :
+
+הכפתורים הרלוונטים לסעיף זה: 
+"Present all questions and answers related to questions"
+"Transfer tests to a treeSet"
+"Transfer tests from a treeSet to a hashLinkedSet"
+
+עבור כל אחד מהכפתורים הנ"ל הוספנו מחלקת command רלוונטית.
+כל מחלקות הcommand שמורות בpackage:"module"
+שמות המחלקות הם:
+"CommandCase1" עבור כפתור - "Present all questions and answers related to questions".
+"CommandCase9" עבור כפתור - "Transfer tests to a treeSet".
+"CommandCase10" עבור כפתור -"Transfer tests from a treeSet to a hashLinkedSet".
+
+כל מחלקה מקבלת את האובייקטים הרלוונטיים לביצוע פעולות הכפתור שאליו היא משוייכת,
+ובתוכה פעולת הexecute שמבצעת את הפעולות הנדרשות.
+אובייקת מן מחלקות הcommand נוצר במחלקת הcontroller :
+menu.addMyEventHandlerForCase1 עבור כפתור "Present all questions and answers related to questions"
+menu.addMyEventHandlerForCase9 עבור כפתור "Transfer tests to a treeSet"
+menu.addMyEventHandlerForCase10 עבור כפתור "Transfer tests from a treeSet to a hashLinkedSet"
+
+27. MEMENTO:
+
+הכפתורים הרלוונטים לסעיף זה: 
+"Present all questions and answers related to questions"
+"Add a new question"
+"Update wording of a question"
+"Update wording of an answer"
+"Delete an answer of a question"
+"Create Memento To All Questions"
+"Retrive Memento For All Questions"
+הכפתור "Retrive Memento For All Questions" יהפוך לפעיל רק לאחר לחיצה על, והצלחת ביצוע פעולת, הכפתור "Create Memento To All Questions".
+**הדפסת הערות כמו הצלחה וכישלון מתבצעת בקונסול
+
+בעזרת הmemento שמרנו מערך הבנוי מאובייקטים ממחלקת הquestions, 
+על ידי לחיצת כפתור ה"Create Memento To All Questions" ניתן לשמור את זיכרון מערך זה,
+ובעזרת כפתור ה"Retrive Memento For All Questions" לשחזר את הזיכרון שנשמר בפעולה הקודמת.
+בכל שלב ניתן להעזר בכפתור ה"Present all questions and answers related to questions" כדי לראות את תוכן המערך.
+בעזרת כפתור ה"Add a new question" להוסיף שאלות חדשות.
+בעזרת הכפתורים "Update wording of a question","Update wording of an answer","Delete an answer of a question", לגרום לשינויים במערך.
+
+מערך השאלות ומערך הmemento שמור במחלקת OperatingSystem" in package module" .
+
+המלצה לבדיקה : 
+1. הרץ את התוכנית.
+2. בעזרת כפתור "Present all questions and answers related to questions" הצג את כל השאלות.
+3. בעזרת כפתור "Create Memento To All Questions" צור שמירת זיכרון.
+4. כעת בעזרת הכפתורים "Update wording of a question","Update wording of an answer","Delete an answer of a question", צור שינויים במערך כרצונך.
+5.הדפס שוב את השאלות כדי לראות את השינויים.
+6.לחץ על כפתור "Retrive Memento For All Questions" כדי לשחזר את השינויים.
+7.הצג שוב את השאלות כדי לראות האם באמת השינויים בוטלו.
+
+התוכנית תומכת בתמונת שחזור אחת, לכן כל לחיצה חדשה על כפתור "Create Memento To All Questions" תדרוס את השמירה האחרונה ותיצור שמירה חדשה.
+
+פעולות יצירת הזיכרון והשיחזור נמצאות במחלקת OperatingSystem":
+createMementoForAllQuestions() שורה 380.
+setMementoToAllQuestions() שורה 398.
+מיקום מחלקות הmemento:
+AmericanMemento שמור במחלקת AmericanQuestions
+OpenMemento שמור במחלקת OpenQuestions
+
+הקישור בין הפקודות מתקיים בעזרת מחלקת הcontroller.
+
+mvc שמרנו על מבנה 
+
+
+
+
+
+
